@@ -1,0 +1,18 @@
+.links-list {
+
+    &__title {
+        margin-bottom: 10px;
+        font-size: 2rem;
+
+    }
+
+    &__item {
+        list-style: none;
+        padding: 5px;
+    }
+
+    &__link {
+        color: white;
+        text-decoration: none;
+    }
+}

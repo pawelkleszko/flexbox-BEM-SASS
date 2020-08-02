@@ -1,0 +1,36 @@
+.article {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+
+
+    &__article-title {
+        text-transform: uppercase;
+        font-size: 2rem;
+        margin: 20px;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+
+    &__button {
+        align-self: center;
+
+        width: 40%;
+        padding: 5px;
+
+        background-color: $base-color;
+        text-transform: uppercase;
+        border: 2px solid black;
+        transition: 0.4s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: white;
+        }
+
+    }
+}

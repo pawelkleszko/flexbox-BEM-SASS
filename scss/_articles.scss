@@ -1,0 +1,26 @@
+.articles {
+    flex-basis: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    text-align: center;
+
+    background-color: $base-color;
+
+    &__main-title {
+        width: 100vw;
+
+        margin: 50px auto;
+        padding: 20px;
+
+        font-size: 4rem;
+        background-color: rgba(0, 0, 0, 0.2);
+        color: white;
+        font-family: $special-font;
+    }
+
+    &--small {
+        background-color: #fff;
+    }
+}

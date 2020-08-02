@@ -5,7 +5,13 @@
 
 
 @import 'variables';
+@import 'media-queries';
+@import 'mixins';
 @import 'reset';
 @import 'wrapper';
-
 @import 'header';
+@import 'menu';
+@import 'articles';
+@import 'article';
+@import 'footer';
+@import 'links-list';
