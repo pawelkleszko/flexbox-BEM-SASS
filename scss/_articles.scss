@@ -8,6 +8,12 @@
 
     background-color: $base-color;
 
+
+    @include media-query(medium) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
     &__main-title {
         width: 100vw;
 

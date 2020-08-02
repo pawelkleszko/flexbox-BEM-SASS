@@ -28,6 +28,10 @@
         margin-right: 50px;
         margin-left: 200px;
         border: 2px solid white;
+
+        @include media-query(medium) {
+            margin-left: 400px;
+        }
     }
 
     &__list-item:hover {

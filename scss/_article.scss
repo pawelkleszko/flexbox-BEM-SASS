@@ -4,6 +4,17 @@
 
     padding: 20px;
 
+    @include media-query(medium) {
+        flex-basis: 40%;
+    }
+
+    &__img {
+        @include media-query(medium) {
+            display: block;
+            width: 100%;
+        }
+    }
+
 
     &__article-title {
         text-transform: uppercase;
@@ -32,5 +43,11 @@
             background-color: white;
         }
 
+    }
+
+    &--small {
+        @include media-query(large) {
+            flex-basis: 30%;
+        }
     }
 }

@@ -2,12 +2,18 @@
     display: flex;
     flex-wrap: wrap;
 
+    @include media-query(large) {
+        position: relative;
+    }
+
     &__search {
         display: flex;
         justify-content: center;
         flex-basis: 100%;
 
         margin: 20px;
+
+
     }
 
     &__input {
@@ -41,6 +47,12 @@
     &__logo {
         width: 188px;
         height: 61px;
+
+        @include media-query(large) {
+            position: absolute;
+            left: 0;
+            top: 20px;
+        }
     }
 
     &__icon {
@@ -50,10 +62,37 @@
         color: gray;
         font-size: 4rem;
         margin: 2vh;
+
     }
 
     &__icon:first-of-type {
         margin-left: auto;
+
+        @include media-query(large) {
+            position: absolute;
+            right: 0;
+            top: 10px;
+        }
+
+    }
+
+    &__icon:nth-of-type(2) {
+
+        @include media-query(large) {
+            position: absolute;
+            right: 50px;
+            top: 10px;
+        }
+
+    }
+
+    &__icon:nth-of-type(3) {
+
+        @include media-query(large) {
+            position: absolute;
+            right: 100px;
+            top: 10px;
+        }
     }
 
 }
